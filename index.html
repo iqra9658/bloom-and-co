@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bloom & Co. | Everyday Little Joys</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        <p>
+            A little joy, delivered to your doorstep ✿ Free shipping on orders above ₹999
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">bloom & co.</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#bloomNavbar"
+                aria-controls="bloomNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-controls">
+                <div id="bloomNavbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto gap-lg-4">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#products" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#story" class="nav-link">Our Story</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button
+                    class="cart-trigger"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#cartDrawer"
+                    aria-controls="cartDrawer"
+                >
+                    <svg
+                        width="20"
+                        height="20"
+                        class="shopping-bag"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"
+                        />
+                    </svg>
+                    <span>Cart (<span id="cart-count" aria-live="polite">0</span>)</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="story">
+        <div class="container">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-12 col-lg-6">
+                    <p class="eyebrow">A little more bloom</p>
+                    <h1>Find your everyday little joy.</h1>
+                    <p class="lead">
+                        Thoughtful essentials, natural textures, and small things
+                        that make life feel lovely.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary btn-lg hero-primary">Explore Collection</a>
+                        <a href="#story" class="btn btn-light btn-lg hero-secondary">Our Story</a>
+                    </div>
+
+                    <ul class="hero-points" aria-label="Brand highlights">
+                        <li>Botanical blends</li>
+                        <li>Thoughtful rituals</li>
+                        <li>Free delivery above ₹999</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="hero-visual">
+                        <img
+                            class="hero-image"
+                            src="Assets/img1.jpg"
+                            alt="Botanical skincare products arranged with natural flowers"
+                        >
+                        <div class="floating-card">
+                            <span class="card-kicker">Curated for slow mornings</span>
+                            <strong>Natural, calming essentials</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-heading text-center">
+                <p class="eyebrow">A little something special</p>
+                <h2>Little things you'll love</h2>
+                <p>Thoughtfully chosen for your everyday moments.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image-wrapper">
+                            <img
+                                src="Assets/botanicalserum.jpg"
+                                alt="Botanical Glow Serum"
+                                class="product-image serum-image"
+                            >
+                        </div>
+                        <div class="card-body">
+                            <div class="product-meta">
+                                <span>Best seller</span>
+                            </div>
+                            <h5 class="card-title">Botanical Glow Serum</h5>
+                            <p class="card-text">₹499</p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-success add-to-cart"
+                                data-name="Botanical Glow Serum"
+                                data-price="499"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image-wrapper">
+                            <img
+                                src="Assets/candle.jpg"
+                                alt="Slow Morning Candle"
+                                class="product-image candle-image"
+                            >
+                        </div>
+                        <div class="card-body">
+                            <div class="product-meta">
+                                <span>New arrival</span>
+                            </div>
+                            <h5 class="card-title">Slow Morning Candle</h5>
+                            <p class="card-text">₹599</p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-success add-to-cart"
+                                data-name="Slow Morning Candle"
+                                data-price="599"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image-wrapper">
+                            <img
+                                src="Assets/mug.jpg"
+                                alt="Sunday Ceramic Mug"
+                                class="product-image mug-image"
+                            >
+                        </div>
+                        <div class="card-body">
+                            <div class="product-meta">
+                                <span>Everyday essential</span>
+                            </div>
+                            <h5 class="card-title">Sunday Ceramic Mug</h5>
+                            <p class="card-text">₹399</p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-success add-to-cart"
+                                data-name="Sunday Ceramic Mug"
+                                data-price="399"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content text-center">
+                <p class="eyebrow newsletter-label">A little note from us</p>
+                <h2 class="newsletter-title">Let your inbox bloom.</h2>
+                <p class="newsletter-text">
+                    Get thoughtful updates, little inspirations, and exclusive offers delivered to your inbox.
+                </p>
+
+                <form class="newsletter-form mx-auto" id="newsletter-form" novalidate>
+                    <div class="input-group">
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="newsletter-email"
+                            placeholder="Your email address"
+                            aria-label="Email address"
+                            autocomplete="email"
+                            required
+                        >
+                        <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                    </div>
+                </form>
+
+                <p id="newsletter-message" class="newsletter-note" aria-live="polite" role="status">
+                    No spam, just lovely things.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#" class="footer-brand">bloom & co.</a>
+                    <p class="footer-description mt-3">
+                        Little things that make your everyday bloom. Thoughtfully chosen for slower, lovelier moments.
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#story">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h6 class="footer-heading">Help</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <h6 class="footer-heading">Follow Along</h6>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bloom & Co. Made with love.</p>
+                <p>Little things. Lovely moments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+        <div class="offcanvas-header">
+            <div>
+                <p class="eyebrow cart-eyebrow">Your bag</p>
+                <h5 id="cartDrawerLabel">Shopping cart</h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close cart"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div id="cart-empty" class="cart-empty-state">
+                <div class="empty-icon">✦</div>
+                <h6>Your cart is feeling light</h6>
+                <p>Add a few little essentials to begin your ritual.</p>
+            </div>
+
+            <div id="cart-items" class="cart-items" aria-live="polite"></div>
+        </div>
+
+        <div class="offcanvas-footer">
+            <div class="cart-summary">
+                <span>Subtotal</span>
+                <strong id="cart-subtotal">₹0</strong>
+            </div>
+            <div class="cart-actions">
+                <button type="button" class="btn btn-outline-light" id="clear-cart">Clear bag</button>
+                <button type="button" class="btn btn-light cart-continue">Continue shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
